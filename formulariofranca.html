@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>França_Formulário</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+          <style type="text/css">
+            body    {
+              background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("imagens/fundo_franca.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+                    }
+                  </style>
+</head>
+<body>
+
+<div class="textobranco centralizar">
+<h1>
+Curso - Francês
+</h1>
+  <div class="iconepequeno">
+  <img src="imagens/bandeira_franca.webp" alt="Ícone do curso">
+</div>
+
+  <hr color="white" size="2%" width="70%" align="center">
+
+
+<h2>Duração: 65 horas | Nível: Básico | Formato: Online<h2>
+
+<p>Inicie seus estudos de francês de forma simples e acessível! O curso oferece aulas introdutórias, materiais digitais exclusivos, exercícios práticos e acompanhamento online dos professores para orientar seu progresso desde o começo.</p>
+
+<p>O valor do curso é de R$ 180,90, garantindo acesso completo às aulas virtuais e todo o suporte necessário para sua aprendizagem.</p>
+
+<p>Por ser online, as aulas podem ser acessadas diretamente pela internet, no horário que for mais conveniente para você, sem precisar se deslocar.</p>
+</div>
+<br><br>
+
+
+
+
+<p>
+<form method="post" action="enviar.php">
+
+
+<fieldset><br>
+  <legend>Dados do(a) Aluno(a)</legend>
+
+<label>Nome Completo</label><br>
+<input type="text" name="nomealuno" placeholder="Insira nome" id="nome" size="20" maxlength="35" required>
+  
+<br><br>
+
+<label>Data de nacimento</label><br>
+<input type="date" name="nascimentoaluno" min="1920-01-01" max="2020-12-31" required>
+
+<br><br>
+
+<label>CPF ou RG (identificação)</label><br>
+<input type="text" name="cpfaluno" placeholder="123.456.789-12" 
+       pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+
+<br><br>
+
+<label>Telefone (fixo e/ou celular)</label><br>
+<input type="tel" name="telefonealuno" placeholder="(99) 99999-9999" 
+       pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
+
+<br><br>
+
+<label>E-mail (para contato e envio de confirmação)</label><br>
+<input type="email" name="email" placeholder="email@exemplo.com" required>
+
+<br><br>
+
+</fieldset>
+
+<br><br>
+
+<fieldset><br>
+  <legend>Dados do(a) Responsável - Caso aluno(a) for menor de idade</legend>
+
+<label>Nome Completo</label><br>
+<input type="text" name="nomeresponsavel" placeholder="Insira nome" id="nome" size="20" maxlength="35">
+  
+<br><br>
+
+<label>CPF ou RG (identificação)</label><br>
+<input type="text" name="cpfresponsavel" placeholder="123.456.789-12" 
+       pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+
+<br><br>
+
+       <label>Telefone (fixo e/ou celular)</label><br>
+<input type="tel" name="telefoneresponsavel" placeholder="(99) 99999-9999" 
+       pattern="\(\d{2}\) \d{4,5}-\d{4}">
+
+<br><br>
+
+<label>E-mail (para contato e envio de confirmação)</label><br>
+<input type="email" name="emailresponsavel" placeholder="email@exemplo.com">
+
+</fieldset>
+
+<br><br>
+
+<fieldset><br>
+  <legend>Endereço</legend>
+
+<label for="estado">Estado</label><br>
+<select name="estado" id="estado" required>
+  <option value="">Selecione seu estado</option>
+  <option value="AC">Acre (AC)</option>
+  <option value="AL">Alagoas (AL)</option>
+  <option value="AP">Amapá (AP)</option>
+  <option value="AM">Amazonas (AM)</option>
+  <option value="BA">Bahia (BA)</option>
+  <option value="CE">Ceará (CE)</option>
+  <option value="DF">Distrito Federal (DF)</option>
+  <option value="ES">Espírito Santo (ES)</option>
+  <option value="GO">Goiás (GO)</option>
+  <option value="MA">Maranhão (MA)</option>
+  <option value="MT">Mato Grosso (MT)</option>
+  <option value="MS">Mato Grosso do Sul (MS)</option>
+  <option value="MG">Minas Gerais (MG)</option>
+  <option value="PA">Pará (PA)</option>
+  <option value="PB">Paraíba (PB)</option>
+  <option value="PR">Paraná (PR)</option>
+  <option value="PE">Pernambuco (PE)</option>
+  <option value="PI">Piauí (PI)</option>
+  <option value="RJ">Rio de Janeiro (RJ)</option>
+  <option value="RN">Rio Grande do Norte (RN)</option>
+  <option value="RS">Rio Grande do Sul (RS)</option>
+  <option value="RO">Rondônia (RO)</option>
+  <option value="RR">Roraima (RR)</option>
+  <option value="SC">Santa Catarina (SC)</option>
+  <option value="SP">São Paulo (SP)</option>
+  <option value="SE">Sergipe (SE)</option>
+  <option value="TO">Tocantins (TO)</option>
+</select>
+
+<br><br>
+
+<label>Cidade</label><br>
+<input type="text" name="cidade" placeholder="Insira sua cidade" id="cidade" size="20" maxlength="35" required>
+
+<br><br>
+
+<label>CEP</label><br>
+<input type="text" name="cep" id="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required>
+
+<br><br>
+
+</fieldset>
+
+<br><br>
+
+<INPUT TYPE="RESET" VALUE="Apagar Campos">
+
+<button type="submit">
+    Confirmar Inscrição
+</button>
+
+</form>
+
+</p>
+</body>
+</html>
